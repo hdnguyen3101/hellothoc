@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f3e8">
+  <meta name="theme-color" content="#cfe5f3">
   <meta name="description" content="Thóc tròn 1 tuổi. Mời cô chú đến chung vui lúc 18h ngày 24/10/2026 tại Ẩm Thực Nhà Tôi.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
@@ -18,67 +18,384 @@
   <title>Thóc tròn 1 tuổi</title>
   <link rel="canonical" href="https://www.hellothoc.io.vn/">
   <link rel="icon" type="image/svg+xml" href="assets/thoc-mark.svg">
-  <link rel="preload" href="assets/fonts/fraunces-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/baloo-2-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/be-vietnam-pro-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/photos/full/thoc-135.jpg" as="image">
   <link rel="stylesheet" href="styles.css">
   <script src="site-content.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="balloon-head" viewBox="0 0 60 82">
+      <path fill="currentColor" stroke="#24486e" stroke-width="3.5" stroke-linejoin="round" d="M30 4C47 4 56 18 56 34C56 54 41 69 30 72C19 69 4 54 4 34C4 18 13 4 30 4Z"/>
+      <path fill="currentColor" stroke="#24486e" stroke-width="3" stroke-linejoin="round" d="M25 79L30 71L35 79Z"/>
+      <ellipse cx="19" cy="25" rx="5" ry="10" fill="#fff" opacity=".6" transform="rotate(22 19 25)"/>
+    </symbol>
+    <symbol id="balloon" viewBox="0 0 60 130">
+      <use href="#balloon-head" width="60" height="82"/>
+      <path fill="none" stroke="#24486e" stroke-width="2.5" stroke-linecap="round" d="M30 80C22 92 38 102 28 114C22 121 30 126 31 128"/>
+    </symbol>
+    <symbol id="grain" viewBox="0 0 60 100">
+      <path d="M30 9C46 20 52 45 48 67C45 85 38 94 30 96C22 94 15 85 12 67C8 45 14 20 30 9Z" fill="#f6cf5e" stroke="#24486e" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M30 14C39 32 41 62 35 88M30 14C21 32 19 62 25 88" fill="none" stroke="#d9a43a" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M30 9C30 6 32 3 36 2" fill="none" stroke="#24486e" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="21" cy="36" rx="3" ry="9" fill="#fff" opacity=".65" transform="rotate(-12 21 36)"/>
+      <circle cx="23.5" cy="57" r="2.8" fill="#24486e"/><circle cx="36.5" cy="57" r="2.8" fill="#24486e"/>
+      <g fill="#f4b9b2" opacity=".85"><circle cx="18.5" cy="64" r="3.4"/><circle cx="41.5" cy="64" r="3.4"/></g>
+      <path d="M26 64Q30 68.5 34 64" fill="none" stroke="#24486e" stroke-width="2.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 160 70">
+      <path fill="#fffdf8" d="M30 66C14 66 4 57 4 46C4 34 14 26 27 27C30 13 43 4 58 6C69 7 78 13 82 22C88 16 97 13 107 15C122 18 131 30 130 42C144 41 156 50 156 58C156 63 152 66 146 66Z"/>
+    </symbol>
+    <symbol id="wheel" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="44" fill="#fff5de" stroke="#24486e" stroke-width="7"/>
+      <circle cx="50" cy="50" r="35" fill="none" stroke="#f6cf5e" stroke-width="4"/>
+      <g stroke="#24486e" stroke-width="5" stroke-linecap="round"><path d="M50 12V88M12 50H88M23 23L77 77M77 23L23 77"/></g>
+      <circle cx="50" cy="50" r="13" fill="#f6cf5e" stroke="#24486e" stroke-width="5"/>
+    </symbol>
+    <symbol id="sparkle" viewBox="0 0 40 40">
+      <path fill="#f6cf5e" stroke="#24486e" stroke-width="2.5" stroke-linejoin="round" d="M20 2C22 14 26 18 38 20C26 22 22 26 20 38C18 26 14 22 2 20C14 18 18 14 20 2Z"/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 40 40">
+      <path fill="#f4b9b2" stroke="#24486e" stroke-width="3" stroke-linejoin="round" d="M20 35C8 26 3 19 3 12.5C3 7 7 3.5 12 3.5C15.5 3.5 18.5 5.5 20 8.5C21.5 5.5 24.5 3.5 28 3.5C33 3.5 37 7 37 12.5C37 19 32 26 20 35Z"/>
+    </symbol>
+    <symbol id="cake" viewBox="0 0 120 130">
+      <ellipse cx="60" cy="119" rx="54" ry="8" fill="#9cc7e4" stroke="#24486e" stroke-width="3.5"/>
+      <rect x="16" y="74" width="88" height="44" rx="10" fill="#fffdf8" stroke="#24486e" stroke-width="3.5"/>
+      <path d="M16 86C16 79 21 74 28 74H92C99 74 104 79 104 86V90C98 98 93 88 88 94C83 102 76 90 70 96C64 104 56 90 50 96C44 102 38 90 32 96C26 102 20 92 16 94Z" fill="#cfe5f3" stroke="#24486e" stroke-width="3" stroke-linejoin="round"/>
+      <g fill="#f6cf5e"><circle cx="31" cy="106" r="3.5"/><circle cx="50" cy="110" r="3.5"/><circle cx="70" cy="106" r="3.5"/><circle cx="89" cy="110" r="3.5"/></g>
+      <rect x="30" y="48" width="60" height="30" rx="9" fill="#f4b9b2" stroke="#24486e" stroke-width="3.5"/>
+      <path d="M30 60H90" stroke="#fffdf8" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+      <path d="M52 26L62 18H67V48H58V30L54 32Z" fill="#f6cf5e" stroke="#24486e" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M62.5 3C69 9 70 14 62.5 17C55 14 56 9 62.5 3Z" fill="#f6cf5e" stroke="#24486e" stroke-width="2.5" stroke-linejoin="round"/>
+      <ellipse cx="62.5" cy="12" rx="2.5" ry="3.5" fill="#f4b9b2"/>
+    </symbol>
+    <symbol id="gift" viewBox="0 0 120 120">
+      <rect x="18" y="56" width="84" height="56" rx="7" fill="#cfe5f3" stroke="#24486e" stroke-width="3.5"/>
+      <g fill="#fffdf8"><circle cx="31" cy="72" r="4"/><circle cx="88" cy="98" r="4"/><circle cx="34" cy="99" r="4"/><circle cx="88" cy="72" r="4"/></g>
+      <rect x="12" y="42" width="96" height="20" rx="7" fill="#9cc7e4" stroke="#24486e" stroke-width="3.5"/>
+      <rect x="52" y="42" width="16" height="70" fill="#f6cf5e" stroke="#24486e" stroke-width="3"/>
+      <path d="M60 42C45 18 21 25 32 39C38 44 51 44 60 42ZM60 42C75 18 99 25 88 39C82 44 69 44 60 42Z" fill="#f6cf5e" stroke="#24486e" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="60" cy="41" r="7" fill="#f6cf5e" stroke="#24486e" stroke-width="3"/>
+    </symbol>
+    <symbol id="teddy" viewBox="0 0 120 130">
+      <g stroke="#24486e" stroke-width="3.5">
+        <ellipse cx="40" cy="114" rx="17" ry="12" fill="#d9a066"/>
+        <ellipse cx="80" cy="114" rx="17" ry="12" fill="#d9a066"/>
+        <ellipse cx="60" cy="90" rx="33" ry="29" fill="#d9a066"/>
+        <ellipse cx="25" cy="88" rx="10" ry="17" fill="#d9a066" transform="rotate(24 25 88)"/>
+        <ellipse cx="95" cy="88" rx="10" ry="17" fill="#d9a066" transform="rotate(-24 95 88)"/>
+        <circle cx="32" cy="24" r="14" fill="#d9a066"/>
+        <circle cx="88" cy="24" r="14" fill="#d9a066"/>
+        <circle cx="60" cy="48" r="32" fill="#d9a066"/>
+        <ellipse cx="60" cy="59" rx="14" ry="11" fill="#f2d3a6" stroke-width="2.5"/>
+      </g>
+      <ellipse cx="60" cy="96" rx="18" ry="16" fill="#f2d3a6"/>
+      <g fill="#f2d3a6"><circle cx="32" cy="24" r="7"/><circle cx="88" cy="24" r="7"/><ellipse cx="40" cy="116" rx="8" ry="6"/><ellipse cx="80" cy="116" rx="8" ry="6"/></g>
+      <path d="M60 78L43 69V87ZM60 78L77 69V87Z" fill="#9cc7e4" stroke="#24486e" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="60" cy="78" r="4.5" fill="#9cc7e4" stroke="#24486e" stroke-width="3"/>
+      <circle cx="47" cy="43" r="4.2" fill="#24486e"/><circle cx="73" cy="43" r="4.2" fill="#24486e"/>
+      <ellipse cx="60" cy="54" rx="5.5" ry="4" fill="#24486e"/>
+      <path d="M60 57V62M54 63C57 66 63 66 66 63" fill="none" stroke="#24486e" stroke-width="2.5" stroke-linecap="round"/>
+      <g fill="#f4b9b2" opacity=".75"><circle cx="40" cy="56" r="5"/><circle cx="80" cy="56" r="5"/></g>
+    </symbol>
+    <symbol id="gamepad" viewBox="0 0 140 90">
+      <path d="M38 14H102C122 14 134 30 136 52C138 72 128 85 116 85C104 85 98 71 88 66H52C42 71 36 85 24 85C12 85 2 72 4 52C6 30 18 14 38 14Z" fill="#cfe5f3" stroke="#24486e" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M31 33H41V39H47V49H41V55H31V49H25V39H31Z" fill="#24486e"/>
+      <g stroke="#24486e" stroke-width="3"><circle cx="102" cy="33" r="6.5" fill="#f6cf5e"/><circle cx="114" cy="45" r="6.5" fill="#f4b9b2"/><circle cx="90" cy="45" r="6.5" fill="#9cc7e4"/><circle cx="102" cy="57" r="6.5" fill="#fffdf8"/></g>
+      <g fill="#24486e"><rect x="58" y="38" width="9" height="5" rx="2.5"/><rect x="73" y="38" width="9" height="5" rx="2.5"/></g>
+      <path d="M28 22C20 25 15 31 13 39" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    </symbol>
+    <symbol id="camera" viewBox="0 0 120 100">
+      <rect x="36" y="12" width="40" height="22" rx="7" fill="#f6cf5e" stroke="#24486e" stroke-width="4"/>
+      <rect x="8" y="26" width="104" height="66" rx="18" fill="#cfe5f3" stroke="#24486e" stroke-width="4.5"/>
+      <circle cx="60" cy="59" r="23" fill="#fffdf8" stroke="#24486e" stroke-width="4.5"/>
+      <circle cx="60" cy="59" r="12" fill="#9cc7e4" stroke="#24486e" stroke-width="3.5"/>
+      <circle cx="55" cy="54" r="3.5" fill="#fff"/>
+      <rect x="86" y="36" width="14" height="9" rx="4" fill="#f4b9b2" stroke="#24486e" stroke-width="3"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 80 100">
+      <path d="M40 96C40 96 8 62 8 38C8 19 22 6 40 6C58 6 72 19 72 38C72 62 40 96 40 96Z" fill="#f4b9b2" stroke="#24486e" stroke-width="4.5" stroke-linejoin="round"/>
+      <circle cx="40" cy="38" r="13" fill="#fffdf8" stroke="#24486e" stroke-width="4"/>
+    </symbol>
+    <symbol id="hand" viewBox="0 0 64 64">
+      <path d="M24 34V12C24 8.7 26.7 6 30 6C33.3 6 36 8.7 36 12V28L50 31C54 32 56.5 35.7 55.8 39.7L53.5 52C52.8 55.5 49.8 58 46.2 58H31C28.6 58 26.4 56.8 25 54.8L14.5 39.6C12.9 37.3 13.4 34.2 15.6 32.6C17.7 31 20.6 31.3 22.4 33.2Z" fill="#fffdf8" stroke="#24486e" stroke-width="3.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="mini-carriage" viewBox="0 0 120 96">
+      <path d="M30 70C21 44 33 20 60 15C87 20 99 44 90 70Z" fill="#9cc7e4" stroke="#24486e" stroke-width="4.5" stroke-linejoin="round"/>
+      <path d="M48 58V40A12 12 0 0 1 72 40V58Z" fill="#fff5de" stroke="#24486e" stroke-width="3.5"/>
+      <path d="M50 16L52 5L58 11L60 3L62 11L68 5L70 16Z" fill="#f6cf5e" stroke="#24486e" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="22" y="64" width="76" height="10" rx="5" fill="#f6cf5e" stroke="#24486e" stroke-width="3.5"/>
+      <g fill="#fff5de" stroke="#24486e" stroke-width="4"><circle cx="36" cy="80" r="12"/><circle cx="86" cy="80" r="13"/></g>
+      <g fill="#f6cf5e"><circle cx="36" cy="80" r="4"/><circle cx="86" cy="80" r="4"/></g>
+    </symbol>
+  </svg>
+
   <a class="skip-link" href="#loi-moi">Đến lời mời</a>
+
   <header class="site-header">
-    <a class="wordmark" href="#dau-trang" aria-label="Thóc, về đầu trang">thóc<span aria-hidden="true">.</span></a>
-    <nav aria-label="Nội dung website"><a href="#loi-moi">Lời mời</a><a href="#album">Album</a><a href="#dau-moc">Dấu mốc</a></nav>
+    <a class="wordmark" href="#dau-trang" aria-label="Thóc, về đầu trang"><svg class="wordmark-grain" aria-hidden="true"><use href="#grain"/></svg>thóc</a>
+    <nav aria-label="Nội dung website">
+      <a href="#loi-moi">Lời mời</a>
+      <a href="#hanh-trinh">Hành trình</a>
+      <a href="#album">Album</a>
+    </nav>
   </header>
+
   <main>
     <section class="hero" id="dau-trang" aria-labelledby="hero-title">
-      <img class="hero-image" id="hero-image" src="assets/photos/hero.jpg" alt="Thóc cười, mặc áo họa tiết xe và đeo đai màu vàng" fetchpriority="high" decoding="async" width="1536" height="2048">
-      <div class="hero-wash" aria-hidden="true"></div>
-      <div class="hero-content">
-        <h1 id="hero-title"><span class="hero-name">Thóc</span><span class="hero-age">tròn <span class="birthday-number">1</span> tuổi</span></h1>
-        <p class="hero-intro">Mời cô chú cùng mừng sinh nhật đầu tiên của Thóc.</p>
-        <a class="button button-primary" href="#loi-moi">Xem lời mời <span aria-hidden="true">↗</span></a>
+      <svg class="hero-cloud hero-cloud-a" aria-hidden="true"><use href="#cloud"/></svg>
+      <svg class="hero-cloud hero-cloud-b" aria-hidden="true"><use href="#cloud"/></svg>
+      <svg class="hero-cloud hero-cloud-c" aria-hidden="true"><use href="#cloud"/></svg>
+      <svg class="drifter drifter-a" aria-hidden="true"><use href="#balloon" color="#f6cf5e"/></svg>
+      <svg class="drifter drifter-b" aria-hidden="true"><use href="#balloon" color="#f4b9b2"/></svg>
+      <svg class="drifter drifter-c" aria-hidden="true"><use href="#sparkle"/></svg>
+      <svg class="drifter drifter-d" aria-hidden="true"><use href="#sparkle"/></svg>
+
+      <div class="hero-copy">
+        <h1 id="hero-title"><span class="hero-name">Thóc</span><span class="hero-age">tròn một tuổi rồi nè!</span></h1>
+        <p class="hero-intro">Cô chú tới chung vui với Thóc lúc 18&nbsp;giờ, thứ Bảy 24.10.2026 nha. Ba mẹ và Thóc chờ cô chú đó!</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#loi-moi">Xem lời mời</a>
+          <a class="button button-quiet" href="#hanh-trinh">Xem hành trình</a>
+        </div>
       </div>
-      <svg class="hero-edge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 39C181 5 304 67 498 42C721 12 883 28 1033 45C1195 65 1321 0 1440 23V70H0Z"/></svg>
+
+      <svg class="carriage" viewBox="0 0 900 1040" role="img" aria-labelledby="carriage-title">
+        <title id="carriage-title">Thóc đội vương miện ngồi trong cỗ xe hoàng tử do bạch mã kéo, trên nóc xe buộc chùm bóng bay có quả bóng số 1</title>
+        <defs>
+          <clipPath id="window-clip"><path d="M545 850V705A95 95 0 0 1 735 705V850Z"/></clipPath>
+        </defs>
+
+        <g class="rig">
+          <ellipse cx="430" cy="1012" rx="420" ry="16" fill="#24486e" opacity=".12"/>
+
+          <g class="balloon-rig">
+            <g fill="none" stroke="#24486e" stroke-width="3" stroke-linecap="round">
+              <path d="M505 375Q560 455 640 482"/>
+              <path d="M591 162Q600 340 640 482"/>
+              <path d="M655 418Q648 460 640 482"/>
+              <path d="M800 308Q720 420 640 482"/>
+              <path d="M768 447Q700 470 640 482"/>
+              <path d="M870 436Q760 470 640 482"/>
+            </g>
+            <use href="#balloon-head" x="545" y="40" width="92" height="126" color="#f4b9b2"/>
+            <use href="#balloon-head" x="740" y="150" width="120" height="164" color="#9cc7e4"/>
+            <use href="#balloon-head" x="450" y="230" width="110" height="150" color="#cfe5f3"/>
+            <text class="number-balloon" x="655" y="410" text-anchor="middle">1</text>
+            <use href="#balloon-head" x="720" y="318" width="96" height="131" color="#fffdf8"/>
+            <use href="#balloon-head" x="830" y="330" width="80" height="109" color="#f6cf5e"/>
+          </g>
+
+          <path d="M320 846L488 868" stroke="#24486e" stroke-width="9" stroke-linecap="round"/>
+
+          <g class="horse">
+            <g fill="none" stroke-linecap="round">
+              <path d="M350 828C394 798 432 826 420 866C412 894 434 918 456 906" stroke="#24486e" stroke-width="32"/>
+              <path d="M352 842C382 852 398 880 384 906" stroke="#24486e" stroke-width="24"/>
+              <path d="M350 828C394 798 432 826 420 866C412 894 434 918 456 906" stroke="#f6cf5e" stroke-width="20"/>
+              <path d="M352 842C382 852 398 880 384 906" stroke="#f6cf5e" stroke-width="12"/>
+            </g>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M302 872L306 996" stroke="#24486e" stroke-width="38"/>
+              <path d="M302 872L306 996" stroke="#efe4cc" stroke-width="26"/>
+              <path d="M190 872L148 922L158 968" stroke="#24486e" stroke-width="38"/>
+              <path d="M190 872L148 922L158 968" stroke="#efe4cc" stroke-width="26"/>
+            </g>
+            <ellipse cx="250" cy="850" rx="116" ry="58" fill="#fffdf8" stroke="#24486e" stroke-width="6"/>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M332 870C344 908 320 930 334 996" stroke="#24486e" stroke-width="38"/>
+              <path d="M332 870C344 908 320 930 334 996" stroke="#fffdf8" stroke-width="26"/>
+              <path d="M214 878L212 996" stroke="#24486e" stroke-width="38"/>
+              <path d="M214 878L212 996" stroke="#fffdf8" stroke-width="26"/>
+            </g>
+            <g fill="#f6cf5e" stroke="#24486e" stroke-width="5" stroke-linejoin="round">
+              <rect x="195" y="984" width="34" height="20" rx="7"/>
+              <rect x="289" y="984" width="34" height="20" rx="7"/>
+              <rect x="317" y="984" width="34" height="20" rx="7"/>
+              <circle cx="159" cy="975" r="15"/>
+            </g>
+            <path d="M204 798Q256 780 310 798L316 872L302 860L288 876L274 860L260 876L246 860L232 876L218 860L202 872Z" fill="#9cc7e4" stroke="#24486e" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M206 852Q258 864 314 852" fill="none" stroke="#f6cf5e" stroke-width="7" stroke-linecap="round"/>
+            <path d="M242 836L245 814L254 826L260 808L266 826L275 814L278 836Z" fill="#f6cf5e" stroke="#24486e" stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M148 668C188 658 206 688 190 706C220 710 228 740 206 754C234 762 238 794 214 804C238 816 232 846 206 846L186 800L160 730Z" fill="#f6cf5e" stroke="#24486e" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M196 838L140 722" stroke="#24486e" stroke-width="78" stroke-linecap="round"/>
+            <path d="M196 838L140 722" stroke="#fffdf8" stroke-width="66" stroke-linecap="round"/>
+            <path d="M116 688L124 644L150 682Z" fill="#fffdf8" stroke="#24486e" stroke-width="5" stroke-linejoin="round"/>
+            <ellipse cx="124" cy="624" rx="10" ry="27" fill="#9cc7e4" stroke="#24486e" stroke-width="4" transform="rotate(-12 124 624)"/>
+            <ellipse cx="146" cy="628" rx="9" ry="23" fill="#f4b9b2" stroke="#24486e" stroke-width="4" transform="rotate(20 146 628)"/>
+            <circle cx="136" cy="656" r="9" fill="#f6cf5e" stroke="#24486e" stroke-width="4"/>
+            <ellipse cx="100" cy="714" rx="64" ry="37" fill="#fffdf8" stroke="#24486e" stroke-width="6" transform="rotate(-28 100 714)"/>
+            <path d="M156 680C170 692 166 712 150 712C138 712 136 698 146 694" fill="#f6cf5e" stroke="#24486e" stroke-width="4.5" stroke-linejoin="round"/>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M56 714C60 746 86 760 108 744L136 690" stroke="#24486e" stroke-width="12"/>
+              <path d="M56 714C60 746 86 760 108 744L136 690" stroke="#f6cf5e" stroke-width="6"/>
+            </g>
+            <circle cx="108" cy="744" r="8" fill="#f4b9b2" stroke="#24486e" stroke-width="4"/>
+            <circle cx="107" cy="703" r="7" fill="#24486e"/>
+            <circle cx="109.5" cy="700.5" r="2.2" fill="#fff"/>
+            <path d="M100 694L95 688M107 692L106 685" stroke="#24486e" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="82" cy="726" r="9" fill="#f4b9b2" opacity=".8"/>
+            <circle cx="52" cy="736" r="3.5" fill="#24486e"/>
+            <path d="M108 744C200 806 340 780 452 736" fill="none" stroke="#24486e" stroke-width="3.5" stroke-linecap="round"/>
+          </g>
+
+          <g class="carriage-body">
+            <path d="M440 880C520 906 720 906 832 872" fill="none" stroke="#24486e" stroke-width="11" stroke-linecap="round"/>
+            <path d="M832 872C856 864 862 838 846 830" fill="none" stroke="#24486e" stroke-width="8" stroke-linecap="round"/>
+            <path d="M480 892C440 760 455 592 640 548C825 592 840 760 800 892Z" fill="#9cc7e4" stroke="#24486e" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M494 880C462 766 476 612 640 566C804 612 818 766 786 880" fill="none" stroke="#f6cf5e" stroke-width="6" stroke-linecap="round"/>
+            <path d="M510 846C486 760 498 650 590 600" fill="none" stroke="#cfe5f3" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+            <g fill="none" stroke-linecap="round">
+              <path d="M512 862C494 856 490 832 508 828C522 826 524 844 514 846" stroke="#24486e" stroke-width="10"/>
+              <path d="M768 862C786 856 790 832 772 828C758 826 756 844 766 846" stroke="#24486e" stroke-width="10"/>
+              <path d="M512 862C494 856 490 832 508 828C522 826 524 844 514 846" stroke="#f6cf5e" stroke-width="5"/>
+              <path d="M768 862C786 856 790 832 772 828C758 826 756 844 766 846" stroke="#f6cf5e" stroke-width="5"/>
+            </g>
+            <path d="M590 552L596 500L620 528L640 486L660 528L684 500L690 552Z" fill="#f6cf5e" stroke="#24486e" stroke-width="5" stroke-linejoin="round"/>
+            <circle cx="640" cy="532" r="7" fill="#f4b9b2" stroke="#24486e" stroke-width="3"/>
+            <circle cx="612" cy="540" r="5" fill="#9cc7e4" stroke="#24486e" stroke-width="3"/>
+            <circle cx="668" cy="540" r="5" fill="#9cc7e4" stroke="#24486e" stroke-width="3"/>
+            <circle cx="640" cy="480" r="10" fill="#f4b9b2" stroke="#24486e" stroke-width="5"/>
+            <rect x="468" y="866" width="346" height="30" rx="15" fill="#f6cf5e" stroke="#24486e" stroke-width="5"/>
+            <g fill="#fffdf8"><circle cx="498" cy="881" r="5"/><circle cx="534" cy="881" r="5"/><circle cx="570" cy="881" r="5"/><circle cx="606" cy="881" r="5"/><circle cx="642" cy="881" r="5"/><circle cx="678" cy="881" r="5"/><circle cx="714" cy="881" r="5"/><circle cx="750" cy="881" r="5"/><circle cx="786" cy="881" r="5"/></g>
+            <rect x="545" y="610" width="190" height="240" fill="#e8f2ee" clip-path="url(#window-clip)"/>
+            <image href="assets/photos/full/thoc-135.jpg" x="393" y="440" width="504" height="672" preserveAspectRatio="xMidYMid slice" clip-path="url(#window-clip)"/>
+            <path d="M545 850V705A95 95 0 0 1 735 705V850Z" fill="none" stroke="#fff5de" stroke-width="16" stroke-linejoin="round"/>
+            <path d="M533 858V705A107 107 0 0 1 747 705V858Z" fill="none" stroke="#24486e" stroke-width="5" stroke-linejoin="round"/>
+            <g>
+              <path d="M462 676V650" stroke="#24486e" stroke-width="5" stroke-linecap="round"/>
+              <path d="M444 690L462 668L480 690Z" fill="#f6cf5e" stroke="#24486e" stroke-width="4.5" stroke-linejoin="round"/>
+              <rect x="447" y="690" width="30" height="40" rx="7" fill="#fff5de" stroke="#24486e" stroke-width="4.5"/>
+              <circle cx="462" cy="710" r="7" fill="#f6cf5e"/>
+            </g>
+          </g>
+
+          <g class="wheel"><use href="#wheel" x="694" y="860" width="152" height="152"/></g>
+          <g class="wheel"><use href="#wheel" x="410" y="890" width="120" height="120"/></g>
+        </g>
+      </svg>
+
+      <svg class="hero-ground" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46C160 18 300 22 470 40C650 60 820 70 1010 46C1180 24 1320 22 1440 36V90H0Z"/></svg>
     </section>
-    <section class="invitation section" id="loi-moi" aria-labelledby="invitation-title">
-      <div class="section-heading reveal"><span class="section-number" aria-hidden="true">01 / Lời mời</span><h2 id="invitation-title">Mừng Thóc<br><em>tròn một tuổi.</em></h2></div>
-      <div class="invitation-content reveal">
-        <p class="invitation-message">Ba mẹ mời cô chú, anh chị và các bạn nhỏ đến chung vui trong tiệc thôi nôi của Thóc.</p>
-        <dl class="event-information">
-          <div class="event-row"><dt>Thời gian</dt><dd><time datetime="2026-10-24T18:00:00+07:00">Thứ Bảy, ngày 24.10.2026</time><span class="event-time">Lúc 18 giờ</span></dd></div>
-          <div class="event-row"><dt>Địa điểm</dt><dd><strong>Ẩm Thực Nhà Tôi</strong><span>62-64 Đường Vành Đai Trong,<br>An Lạc, TP. Hồ Chí Minh</span></dd></div>
-        </dl>
-        <a class="button button-outline" href="https://maps.app.goo.gl/rwCZzLZ7KrzvmmYR6" target="_blank" rel="noopener noreferrer">Mở bản đồ <span aria-hidden="true">↗</span></a>
-        <p class="signature">Ba &amp; Mẹ của Thóc</p>
+
+    <section class="invitation" id="loi-moi" aria-labelledby="invitation-title">
+      <svg class="bunting" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 8Q600 64 1200 8" fill="none" stroke="#24486e" stroke-width="2.5"/>
+        <g stroke="#24486e" stroke-width="2.5" stroke-linejoin="round">
+          <path d="M60 14L84 18L70 46Z" fill="#9cc7e4"/><path d="M170 24L196 28L180 56Z" fill="#f6cf5e"/><path d="M285 32L312 35L296 64Z" fill="#f4b9b2"/><path d="M405 37L432 39L417 68Z" fill="#cfe5f3"/><path d="M525 40L552 40L538 69Z" fill="#9cc7e4"/><path d="M648 40L675 40L661 69Z" fill="#f6cf5e"/><path d="M768 39L795 37L783 68Z" fill="#f4b9b2"/><path d="M888 35L915 32L904 64Z" fill="#cfe5f3"/><path d="M1004 28L1030 24L1020 56Z" fill="#9cc7e4"/><path d="M1116 18L1140 14L1130 46Z" fill="#f6cf5e"/>
+        </g>
+      </svg>
+
+      <div class="invitation-inner">
+        <div class="invitation-heading">
+          <h2 id="invitation-title">Cô chú ơi, tới chơi với Thóc nha!</h2>
+          <p class="lead">Thóc sắp tròn một tuổi rồi. Ba mẹ mời cô chú, anh chị và các bạn nhỏ tới dự tiệc thôi nôi, cùng Thóc thổi ngọn nến đầu tiên.</p>
+          <p class="signature">Ba &amp; Mẹ của Thóc</p>
+        </div>
+
+        <div class="when">
+          <svg class="when-cake" aria-hidden="true"><use href="#cake"/></svg>
+          <svg class="when-balloon when-balloon-a" aria-hidden="true"><use href="#balloon" color="#f4b9b2"/></svg>
+          <svg class="when-balloon when-balloon-b" aria-hidden="true"><use href="#balloon" color="#f6cf5e"/></svg>
+          <p class="when-day">Thứ Bảy</p>
+          <p class="when-date"><time datetime="2026-10-24T18:00:00+07:00">24.10</time></p>
+          <p class="when-year">năm 2026</p>
+          <p class="when-time">Thóc đón khách lúc <strong>18:00</strong></p>
+          <p class="countdown" id="countdown" aria-live="polite"></p>
+          <button type="button" class="button button-primary" id="add-calendar">Thêm vào lịch</button>
+        </div>
+
+        <div class="where" id="ban-do">
+          <div class="map-frame">
+            <p class="map-fallback">Bản đồ chưa hiện thì cô chú bấm "Chỉ đường bằng Google Maps" bên dưới nha.</p>
+            <iframe title="Bản đồ đến Ẩm Thực Nhà Tôi" src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1z4bqobSBUaOG7sWMgTmjDoCBUw7RpLCA2Mi02NCDEkMaw4budbmcgVsOgbmggxJBhaSBUcm9uZywgQW4gTOG6oWMsIEjhu5MgQ2jDrSBNaW5o!6i16" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <svg class="map-pin" aria-hidden="true"><use href="#balloon" color="#9cc7e4"/></svg>
+          <h3 class="venue-name">Ẩm Thực Nhà Tôi</h3>
+          <p class="venue-address">62-64 Đường Vành Đai Trong, An Lạc, TP. Hồ Chí Minh</p>
+          <a class="button button-outline" href="https://maps.app.goo.gl/rwCZzLZ7KrzvmmYR6" target="_blank" rel="noopener noreferrer">Chỉ đường bằng Google Maps</a>
+        </div>
       </div>
     </section>
-    <section class="album section" id="album" aria-labelledby="album-title">
-      <div class="album-heading reveal">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">02 / Album của Thóc</span><h2 id="album-title">Một tuổi nhỏ.<br><em>Thật nhiều thương.</em></h2></div>
-        <p class="section-intro">Từ những ngày bé xíu đến lúc ngồi chơi và đi biển cùng cả nhà.</p>
+
+    <section class="journey-section" id="hanh-trinh" aria-labelledby="journey-title">
+      <div class="toy-parade" aria-hidden="true">
+        <svg class="toy toy-gift"><use href="#gift"/></svg>
+        <svg class="toy toy-teddy"><use href="#teddy"/></svg>
+        <svg class="toy toy-gamepad"><use href="#gamepad"/></svg>
+        <svg class="toy toy-cake"><use href="#cake"/></svg>
+      </div>
+      <svg class="band-edge band-edge-top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C200 4 380 50 620 34C860 18 1040 0 1240 20C1330 29 1400 40 1440 34V60Z"/></svg>
+      <div class="journey-heading">
+        <h2 id="journey-title">Thóc lớn từng ngày</h2>
+        <p class="lead">Mười bốn chặng đường nhỏ, từ hồi Thóc còn trong bụng mẹ tới ngày tròn một tuổi.</p>
+      </div>
+
+      <div class="swipe-hint" id="journey-hint" aria-hidden="true"><svg class="swipe-hand"><use href="#hand"/></svg>Vuốt sang trái để đi tiếp cùng Thóc nha</div>
+      <div class="journey-viewport" id="journey-viewport" tabindex="0" role="region" aria-label="Các chặng hành trình, vuốt hoặc dùng phím mũi tên để xem">
+        <ol class="journey" id="journey-list"></ol>
+      </div>
+
+      <div class="journey-controls">
+        <button type="button" class="round-button" id="journey-previous" aria-label="Chặng trước"><span aria-hidden="true">‹</span></button>
+        <div class="road" id="road">
+          <div class="road-stops" id="road-stops"></div>
+          <svg class="road-carriage" id="road-carriage" aria-hidden="true"><use href="#mini-carriage"/></svg>
+        </div>
+        <button type="button" class="round-button" id="journey-next" aria-label="Chặng tiếp theo"><span aria-hidden="true">›</span></button>
+        <p class="journey-status" id="journey-status" aria-live="polite"></p>
+      </div>
+      <svg class="band-edge band-edge-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0V26C180 52 420 14 660 30C900 46 1080 58 1280 36C1360 27 1410 22 1440 26V0Z"/></svg>
+    </section>
+
+    <section class="album" id="album" aria-labelledby="album-title">
+      <div class="album-heading">
+        <h2 id="album-title">Những khoảnh khắc của Thóc</h2>
+        <p class="lead">Ba mẹ gom ảnh theo từng khoảnh khắc của Thóc. Chạm vào một bìa để xem, chạm vào ảnh để phóng to nha.</p>
+      </div>
+      <div class="moments" id="moment-list" role="group" aria-label="Chọn khoảnh khắc"></div>
+      <div class="moment-head">
+        <h3 class="moment-title" id="moment-title"></h3>
+        <p class="moment-note" id="moment-note"></p>
       </div>
       <div class="photo-grid" id="photo-grid"></div>
-      <p class="gallery-hint">Chạm vào ảnh để xem lớn.</p>
-    </section>
-    <section class="milestones section" id="dau-moc" aria-labelledby="milestones-title">
-      <div class="section-heading reveal"><span class="section-number" aria-hidden="true">03 / Dấu mốc đầu đời</span><h2 id="milestones-title">Từng chút một,<br><em>Thóc lớn lên.</em></h2><p class="section-intro" id="milestones-intro">Ảnh tạm cho bốn dấu mốc. Ba mẹ sẽ chọn lại ảnh sau.</p></div>
-      <div class="milestone-list" id="milestone-list"></div>
+      <div class="album-more">
+        <button type="button" class="button button-outline" id="album-more"></button>
+      </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <a class="footer-wordmark" href="#dau-trang" aria-label="Thóc, về đầu trang">thóc<span aria-hidden="true">.</span></a>
-    <p>Ba &amp; Mẹ dành cho Thóc.</p>
-    <a href="#dau-trang" class="back-to-top">Về đầu trang <span aria-hidden="true">↑</span></a>
+    <div class="footer-balloons" aria-hidden="true">
+      <svg><use href="#balloon" color="#9cc7e4"/></svg>
+      <svg><use href="#balloon" color="#f6cf5e"/></svg>
+      <svg><use href="#balloon" color="#fffdf8"/></svg>
+      <svg><use href="#balloon" color="#f4b9b2"/></svg>
+      <svg><use href="#balloon" color="#cfe5f3"/></svg>
+    </div>
+    <p class="footer-line">Hẹn gặp cô chú tối 24.10 nha!</p>
+    <p class="footer-sign">Thóc chờ cô chú ở Ẩm Thực Nhà Tôi. Ba &amp; Mẹ làm trang này tặng Thóc.</p>
+    <a href="#dau-trang" class="back-to-top">Về đầu trang</a>
   </footer>
+
+  <nav class="tabbar" id="tabbar" aria-label="Đi nhanh tới">
+    <a href="#loi-moi" data-section="loi-moi"><svg aria-hidden="true"><use href="#cake"/></svg>Lời mời</a>
+    <a href="#hanh-trinh" data-section="hanh-trinh"><svg aria-hidden="true"><use href="#mini-carriage"/></svg>Hành trình</a>
+    <a href="#album" data-section="album"><svg aria-hidden="true"><use href="#camera"/></svg>Album</a>
+    <a href="#ban-do" data-section="ban-do"><svg aria-hidden="true"><use href="#pin"/></svg>Chỉ đường</a>
+  </nav>
+
   <dialog class="lightbox" id="lightbox" aria-label="Xem ảnh của Thóc">
-    <div class="lightbox-toolbar"><span id="lightbox-count" aria-live="polite"></span><button type="button" class="lightbox-close" id="lightbox-close" aria-label="Đóng ảnh">Đóng <span aria-hidden="true">×</span></button></div>
+    <div class="lightbox-toolbar"><span id="lightbox-count" aria-live="polite"></span><button type="button" class="lightbox-close" id="lightbox-close">Đóng</button></div>
     <div class="lightbox-stage">
-      <button type="button" class="lightbox-arrow lightbox-previous" id="lightbox-previous" aria-label="Ảnh trước"><span aria-hidden="true">←</span></button>
-      <figure class="lightbox-figure"><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
-      <button type="button" class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Ảnh tiếp theo"><span aria-hidden="true">→</span></button>
+      <button type="button" class="lightbox-arrow lightbox-previous" id="lightbox-previous" aria-label="Ảnh trước"><span aria-hidden="true">‹</span></button>
+      <figure class="lightbox-figure"><img id="lightbox-image" alt=""><figcaption><span class="lightbox-moment" id="lightbox-moment"></span><span class="lightbox-caption" id="lightbox-caption"></span></figcaption></figure>
+      <p class="lightbox-hint" id="lightbox-hint" aria-hidden="true">Vuốt ngang xem tiếp, vuốt xuống để đóng</p>
+      <button type="button" class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Ảnh tiếp theo"><span aria-hidden="true">›</span></button>
     </div>
   </dialog>
-  <noscript><p class="noscript-note">Hãy bật JavaScript để xem album ảnh.</p></noscript>
+  <noscript><p class="noscript-note">Hãy bật JavaScript để xem album ảnh và hành trình của Thóc.</p></noscript>
 </body>
 </html>

@@ -1,139 +1,352 @@
-// Photos selected from the supplied family folder. Milestone photos are provisional.
+// Nội dung website. Ảnh nằm trong assets/photos/full (bản lớn) và assets/photos/thumb (bản nhỏ), cùng tên file.
+//
+// milestones: 14 chặng của hành trình. "photo" là tên file ảnh, "title" và "story" là chữ trên thẻ.
+// Thêm "position" (ví dụ "50% 30%") khi cần chỉnh vùng cắt ảnh trong khung.
+//
+// moments: các khoảnh khắc của album, theo thứ tự hiện trên trang.
+// photos: mỗi ảnh thuộc một "moment". "caption" là lời chú thích hiện dưới ảnh (không bắt buộc).
+// "chapter" trùng "key" của chặng hành trình, dùng cho nút "Xem ảnh tháng này".
 window.THOC_CONTENT = {
-  "photos": [
-    {
-      "src": "assets/photos/thoc-01.jpg",
-      "thumbnail": "assets/photos/thoc-01-small.jpg",
-      "caption": "Những ngày bé xíu",
-      "alt": "Những ngày bé xíu"
-    },
-    {
-      "src": "assets/photos/thoc-02.jpg",
-      "thumbnail": "assets/photos/thoc-02-small.jpg",
-      "caption": "Chiếc mũ tai thỏ",
-      "alt": "Chiếc mũ tai thỏ"
-    },
-    {
-      "src": "assets/photos/thoc-03.jpg",
-      "thumbnail": "assets/photos/thoc-03-small.jpg",
-      "caption": "Thóc nhìn ngắm",
-      "alt": "Thóc nhìn ngắm"
-    },
-    {
-      "src": "assets/photos/thoc-04.jpg",
-      "thumbnail": "assets/photos/thoc-04-small.jpg",
-      "caption": "Thóc và hoa mai",
-      "alt": "Thóc và hoa mai"
-    },
-    {
-      "src": "assets/photos/thoc-05.jpg",
-      "thumbnail": "assets/photos/thoc-05-small.jpg",
-      "caption": "Cả nhà bên nhau",
-      "alt": "Cả nhà bên nhau"
-    },
-    {
-      "src": "assets/photos/thoc-06.jpg",
-      "thumbnail": "assets/photos/thoc-06-small.jpg",
-      "caption": "Một giấc ngủ nhỏ",
-      "alt": "Một giấc ngủ nhỏ"
-    },
-    {
-      "src": "assets/photos/thoc-07.jpg",
-      "thumbnail": "assets/photos/thoc-07-small.jpg",
-      "caption": "Kính mát của Thóc",
-      "alt": "Kính mát của Thóc"
-    },
-    {
-      "src": "assets/photos/thoc-08.jpg",
-      "thumbnail": "assets/photos/thoc-08-small.jpg",
-      "caption": "Nằm chơi trong áo kẻ",
-      "alt": "Nằm chơi trong áo kẻ"
-    },
-    {
-      "src": "assets/photos/thoc-09.jpg",
-      "thumbnail": "assets/photos/thoc-09-small.jpg",
-      "caption": "Một tấm ảnh cùng ba",
-      "alt": "Một tấm ảnh cùng ba"
-    },
-    {
-      "src": "assets/photos/thoc-10.jpg",
-      "thumbnail": "assets/photos/thoc-10-small.jpg",
-      "caption": "Thóc ngồi bên biển",
-      "alt": "Thóc ngồi bên biển"
-    },
-    {
-      "src": "assets/photos/thoc-11.jpg",
-      "thumbnail": "assets/photos/thoc-11-small.jpg",
-      "caption": "Cầm chiếc kính mát",
-      "alt": "Cầm chiếc kính mát"
-    },
-    {
-      "src": "assets/photos/thoc-12.jpg",
-      "thumbnail": "assets/photos/thoc-12-small.jpg",
-      "caption": "Cả nhà bên biển",
-      "alt": "Cả nhà bên biển"
-    },
-    {
-      "src": "assets/photos/thoc-13.jpg",
-      "thumbnail": "assets/photos/thoc-13-small.jpg",
-      "caption": "Trên tay mẹ",
-      "alt": "Trên tay mẹ"
-    },
-    {
-      "src": "assets/photos/thoc-14.jpg",
-      "thumbnail": "assets/photos/thoc-14-small.jpg",
-      "caption": "Đôi mắt tròn của Thóc",
-      "alt": "Đôi mắt tròn của Thóc"
-    },
-    {
-      "src": "assets/photos/thoc-15.jpg",
-      "thumbnail": "assets/photos/thoc-15-small.jpg",
-      "caption": "Chơi cùng bạn hươu",
-      "alt": "Chơi cùng bạn hươu"
-    },
-    {
-      "src": "assets/photos/thoc-16.jpg",
-      "thumbnail": "assets/photos/thoc-16-small.jpg",
-      "caption": "Ngồi chơi trong ghế",
-      "alt": "Ngồi chơi trong ghế"
-    },
-    {
-      "src": "assets/photos/thoc-17.jpg",
-      "thumbnail": "assets/photos/thoc-17-small.jpg",
-      "caption": "Món đồ chơi màu vàng",
-      "alt": "Món đồ chơi màu vàng"
-    },
-    {
-      "src": "assets/photos/thoc-18.jpg",
-      "thumbnail": "assets/photos/thoc-18-small.jpg",
-      "caption": "Nụ cười của Thóc",
-      "alt": "Nụ cười của Thóc"
-    }
-  ],
   "milestones": [
     {
-      "title": "Lần đầu biết lật",
-      "src": "assets/photos/thoc-08.jpg",
-      "alt": "Ảnh tạm của Thóc nằm chơi trong áo kẻ",
-      "label": "Dấu mốc 01"
+      "key": "cho-thoc",
+      "label": "Chờ Thóc",
+      "date": "Năm 2025",
+      "title": "Thóc ở trong bụng mẹ",
+      "photo": "thoc-006.jpg",
+      "story": "Ba mẹ đếm từng ngày, chờ được gặp Thóc."
     },
     {
-      "title": "Lần đầu biết ngồi",
-      "src": "assets/photos/thoc-16.jpg",
-      "alt": "Ảnh tạm của Thóc ngồi chơi trong ghế",
-      "label": "Dấu mốc 02"
+      "key": "chao-doi",
+      "label": "Chào đời",
+      "date": "28.10.2025",
+      "title": "Chào Thóc!",
+      "photo": "thoc-012.jpg",
+      "story": "Thóc chào đời, bé xíu, đỏ hỏn và ngủ ngoan trên tay ba mẹ."
     },
     {
-      "title": "Lần đầu biết đứng",
-      "src": "assets/photos/thoc-14.jpg",
-      "alt": "Ảnh tạm của Thóc trong bộ đồ sáng màu",
-      "label": "Dấu mốc 03"
+      "key": "thang-1",
+      "month": 1,
+      "label": "1 tháng",
+      "date": "28.11.2025",
+      "title": "Tròn tháng đầu tiên",
+      "photo": "thoc-021.jpg",
+      "story": "Có bảng tên riêng, có cả tiệc đầy tháng với ông bà, họ hàng."
     },
     {
-      "title": "Mọc chiếc răng đầu tiên",
-      "src": "assets/photos/thoc-18.jpg",
-      "alt": "Ảnh tạm của Thóc đang cười",
-      "label": "Dấu mốc 04"
+      "key": "thang-2",
+      "month": 2,
+      "label": "2 tháng",
+      "date": "28.12.2025",
+      "title": "Làm quen bạn gấu",
+      "photo": "thoc-025.jpg",
+      "story": "Từ tháng này, tháng nào Thóc cũng chụp ảnh chung với bạn gấu."
+    },
+    {
+      "key": "thang-3",
+      "month": 3,
+      "label": "3 tháng",
+      "date": "28.01.2026",
+      "title": "Tết đầu tiên",
+      "photo": "thoc-035.jpg",
+      "story": "Áo đẹp, mai vàng, ba một bên, mẹ một bên."
+    },
+    {
+      "key": "thang-4",
+      "month": 4,
+      "label": "4 tháng",
+      "date": "28.02.2026",
+      "title": "Lần đầu Thóc gặp biển",
+      "photo": "thoc-040.jpg",
+      "story": "Lần đầu theo ba mẹ ra biển, nghe sóng vỗ rì rào."
+    },
+    {
+      "key": "thang-5",
+      "month": 5,
+      "label": "5 tháng",
+      "date": "28.03.2026",
+      "title": "Tập bơi phao",
+      "photo": "thoc-047.jpg",
+      "story": "Ngồi phao, đạp nước tung tóe, cười tít mắt."
+    },
+    {
+      "key": "thang-6",
+      "month": 6,
+      "label": "6 tháng",
+      "date": "28.04.2026",
+      "title": "Tập ăn dặm",
+      "photo": "thoc-061.jpg",
+      "story": "Muỗng cháo màu xanh lá. Ngon hông Thóc?"
+    },
+    {
+      "key": "thang-7",
+      "month": 7,
+      "label": "7 tháng",
+      "date": "28.05.2026",
+      "title": "Đi biển thoy!",
+      "photo": "thoc-074.jpg",
+      "story": "Kính râm, ghế nhỏ và một bờ biển thật dài."
+    },
+    {
+      "key": "thang-8",
+      "month": 8,
+      "label": "8 tháng",
+      "date": "28.06.2026",
+      "title": "Ngồi vững rồi nè",
+      "photo": "thoc-090.jpg",
+      "story": "Thóc tự ngồi xem sách được rồi nè."
+    },
+    {
+      "key": "thang-9",
+      "month": 9,
+      "label": "9 tháng",
+      "date": "28.07.2026",
+      "title": "Tóc mới của Thóc",
+      "photo": "thoc-100.jpg",
+      "story": "Quả tóc xoăn mới sắm, cả nhà cười nghiêng ngả."
+    },
+    {
+      "key": "thang-10",
+      "month": 10,
+      "label": "10 tháng",
+      "date": "28.08.2026",
+      "title": "Hoàng tử tập cưỡi ngựa",
+      "photo": "thoc-119.jpg",
+      "story": "Bò khắp nhà, rồi leo lên ngựa bập bênh tập làm hoàng tử."
+    },
+    {
+      "key": "thang-11",
+      "month": 11,
+      "label": "11 tháng",
+      "date": "28.09.2026",
+      "title": "Đội mũ tai gấu",
+      "photo": "thoc-126.jpg",
+      "story": "Mũ tai gấu đi dạo, ai gặp cũng muốn nựng một cái."
+    },
+    {
+      "key": "tron-1-tuoi",
+      "label": "1 tuổi",
+      "date": "28.10.2026",
+      "title": "Sắp tròn một tuổi rồi!",
+      "photo": "thoc-162.jpg",
+      "story": "Diện đồ đầy đủ. Hẹn cô chú ở tiệc nha!"
     }
+  ],
+  "moments": [
+    {
+      "key": "hoang-tu",
+      "title": "Hoàng tử thôi nôi",
+      "note": "Vương miện, bóng bay và biển xanh trong buổi chụp tròn một tuổi."
+    },
+    {
+      "key": "ca-nha",
+      "title": "Cả nhà mình",
+      "note": "Ba, mẹ, ông bà, họ hàng và Thóc ở giữa."
+    },
+    {
+      "key": "di-bien",
+      "title": "Đi biển thoy!",
+      "note": "Cát, sóng, gió và một em bé đội mũ."
+    },
+    {
+      "key": "tap-boi",
+      "title": "Tập bơi cùng ba mẹ",
+      "note": "Phao vịt, phao xanh và nước mát rượi."
+    },
+    {
+      "key": "be-xiu",
+      "title": "Hồi Thóc bé xíu",
+      "note": "Từ lúc còn trong bụng mẹ tới những ngày đầu đời."
+    },
+    {
+      "key": "ban-gau",
+      "title": "Bạn gấu mỗi tháng",
+      "note": "Mỗi tháng một tấm, bạn gấu vẫn vậy còn Thóc lớn vù vù."
+    },
+    {
+      "key": "mam-mam",
+      "title": "Măm măm",
+      "note": "Cháo, sữa và những muỗng ăn dặm đầu tiên."
+    },
+    {
+      "key": "ngu-ngoan",
+      "title": "Ngủ ngoan nha",
+      "note": "Những giấc ngủ say sưa, tay chân thả lỏng."
+    },
+    {
+      "key": "lam-dang",
+      "title": "Thóc làm dáng",
+      "note": "Tóc giả, mũ bảo hiểm, kính bơi. Thóc chơi hết."
+    },
+    {
+      "key": "choi-vui",
+      "title": "Chơi vui ghê",
+      "note": "Sách, đồ chơi, ngựa bập bênh và bò khắp nhà."
+    },
+    {
+      "key": "dao-pho",
+      "title": "Đi dạo phố",
+      "note": "Ngồi xe đẩy, ngắm người qua lại."
+    },
+    {
+      "key": "nu-cuoi",
+      "title": "Cười một cái nào",
+      "note": "Nụ cười làm cả nhà tan chảy."
+    }
+  ],
+  "photos": [
+    { "file": "thoc-132.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-133.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-134.jpg", "moment": "hoang-tu", "caption": "Thóc sắp đứng vững rồi nè!", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-135.jpg", "moment": "hoang-tu", "caption": "Vương miện này vừa khít luôn", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-136.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-137.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-138.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-139.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-140.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-141.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-142.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-143.jpg", "moment": "hoang-tu", "chapter": "thang-11", "width": 560, "height": 747 },
+    { "file": "thoc-144.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-145.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-146.jpg", "moment": "hoang-tu", "caption": "Ú òa!", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-147.jpg", "moment": "hoang-tu", "chapter": "thang-11", "width": 560, "height": 747 },
+    { "file": "thoc-148.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-149.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-150.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-151.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-152.jpg", "moment": "hoang-tu", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-162.jpg", "moment": "hoang-tu", "caption": "Spidey Thóc", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-003.jpg", "moment": "ca-nha", "caption": "Ba mẹ đang đợi Thóc", "chapter": "cho-thoc", "width": 560, "height": 373 },
+    { "file": "thoc-004.jpg", "moment": "ca-nha", "chapter": "cho-thoc", "width": 560, "height": 373 },
+    { "file": "thoc-005.jpg", "moment": "ca-nha", "chapter": "cho-thoc", "width": 560, "height": 373 },
+    { "file": "thoc-009.jpg", "moment": "ca-nha", "chapter": "chao-doi", "width": 560, "height": 747 },
+    { "file": "thoc-010.jpg", "moment": "ca-nha", "chapter": "chao-doi", "width": 560, "height": 420 },
+    { "file": "thoc-011.jpg", "moment": "ca-nha", "caption": "Ba bế Thóc, cười không khép miệng", "chapter": "chao-doi", "width": 560, "height": 747 },
+    { "file": "thoc-022.jpg", "moment": "ca-nha", "caption": "Bánh đầy tháng của Thóc", "chapter": "thang-1", "width": 560, "height": 758 },
+    { "file": "thoc-023.jpg", "moment": "ca-nha", "caption": "Cả nhà tới mừng đầy tháng", "chapter": "thang-1", "width": 560, "height": 652 },
+    { "file": "thoc-024.jpg", "moment": "ca-nha", "chapter": "thang-1", "width": 560, "height": 638 },
+    { "file": "thoc-028.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 420 },
+    { "file": "thoc-029.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 747 },
+    { "file": "thoc-032.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 506, "height": 900 },
+    { "file": "thoc-034.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 747 },
+    { "file": "thoc-035.jpg", "moment": "ca-nha", "caption": "Tết đầu tiên, có mai vàng có ba mẹ", "chapter": "thang-3", "width": 560, "height": 813 },
+    { "file": "thoc-036.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 420 },
+    { "file": "thoc-037.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 420 },
+    { "file": "thoc-038.jpg", "moment": "ca-nha", "chapter": "thang-3", "width": 560, "height": 747 },
+    { "file": "thoc-051.jpg", "moment": "ca-nha", "chapter": "thang-6", "width": 560, "height": 506 },
+    { "file": "thoc-055.jpg", "moment": "ca-nha", "chapter": "thang-6", "width": 503, "height": 900 },
+    { "file": "thoc-060.jpg", "moment": "ca-nha", "chapter": "thang-6", "width": 560, "height": 618 },
+    { "file": "thoc-063.jpg", "moment": "ca-nha", "chapter": "thang-6", "width": 560, "height": 747 },
+    { "file": "thoc-064.jpg", "moment": "ca-nha", "chapter": "thang-6", "width": 560, "height": 420 },
+    { "file": "thoc-073.jpg", "moment": "ca-nha", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-105.jpg", "moment": "ca-nha", "caption": "Ngồi trên vai ba, cao nhất nhà", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-122.jpg", "moment": "ca-nha", "caption": "Thóc về quê Cố", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-123.jpg", "moment": "ca-nha", "caption": "Bà Cố đang bế nè", "chapter": "thang-10", "width": 506, "height": 900 },
+    { "file": "thoc-127.jpg", "moment": "ca-nha", "caption": "Ông Cố bế nữa nè, thích ghê!", "chapter": "thang-10", "width": 506, "height": 900 },
+    { "file": "thoc-153.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-154.jpg", "moment": "ca-nha", "caption": "Cao quá ba ơi!", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-155.jpg", "moment": "ca-nha", "caption": "Ba mẹ và hoàng tử nhỏ", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-156.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-157.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-158.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-159.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-160.jpg", "moment": "ca-nha", "caption": "Ba nín thở thử coi!", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-161.jpg", "moment": "ca-nha", "chapter": "tron-1-tuoi", "width": 560, "height": 747 },
+    { "file": "thoc-040.jpg", "moment": "di-bien", "caption": "Lần đầu Thóc gặp biển", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-041.jpg", "moment": "di-bien", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-049.jpg", "moment": "di-bien", "caption": "Đội mũ đi dạo cùng ba", "chapter": "thang-5", "width": 560, "height": 747 },
+    { "file": "thoc-065.jpg", "moment": "di-bien", "chapter": "thang-6", "width": 560, "height": 420 },
+    { "file": "thoc-070.jpg", "moment": "di-bien", "caption": "Thay đồ bơi nha mẹ ơi!", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-071.jpg", "moment": "di-bien", "caption": "Đi biển thoy!", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-072.jpg", "moment": "di-bien", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-074.jpg", "moment": "di-bien", "caption": "Kính râm này là của Thóc nha", "chapter": "thang-7", "width": 558, "height": 900 },
+    { "file": "thoc-075.jpg", "moment": "di-bien", "caption": "Cả thế giới của mẹ", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-076.jpg", "moment": "di-bien", "chapter": "thang-7", "width": 560, "height": 767 },
+    { "file": "thoc-077.jpg", "moment": "di-bien", "caption": "Ngắm sóng một chút", "chapter": "thang-7", "width": 560, "height": 782 },
+    { "file": "thoc-078.jpg", "moment": "di-bien", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-080.jpg", "moment": "di-bien", "chapter": "thang-7", "width": 560, "height": 750 },
+    { "file": "thoc-083.jpg", "moment": "di-bien", "chapter": "thang-7", "width": 560, "height": 794 },
+    { "file": "thoc-042.jpg", "moment": "tap-boi", "caption": "Tập bơi cùng ba mẹ", "chapter": "thang-4", "width": 506, "height": 900 },
+    { "file": "thoc-047.jpg", "moment": "tap-boi", "caption": "Ngồi phao cùng vịt con, khoái chí ghê", "chapter": "thang-5", "width": 506, "height": 900 },
+    { "file": "thoc-001.jpg", "moment": "be-xiu", "caption": "Lần đầu ba mẹ thấy mặt Thóc nè", "chapter": "cho-thoc", "width": 560, "height": 428 },
+    { "file": "thoc-002.jpg", "moment": "be-xiu", "chapter": "cho-thoc", "width": 560, "height": 420 },
+    { "file": "thoc-006.jpg", "moment": "be-xiu", "caption": "Thóc đang trốn trong này nè", "chapter": "cho-thoc", "width": 560, "height": 840 },
+    { "file": "thoc-007.jpg", "moment": "be-xiu", "chapter": "cho-thoc", "width": 560, "height": 373 },
+    { "file": "thoc-008.jpg", "moment": "be-xiu", "caption": "Cái ôm đầu tiên của mẹ", "chapter": "chao-doi", "width": 560, "height": 601 },
+    { "file": "thoc-012.jpg", "moment": "be-xiu", "chapter": "chao-doi", "width": 560, "height": 747 },
+    { "file": "thoc-013.jpg", "moment": "be-xiu", "chapter": "chao-doi", "width": 560, "height": 747 },
+    { "file": "thoc-014.jpg", "moment": "be-xiu", "chapter": "chao-doi", "width": 560, "height": 747 },
+    { "file": "thoc-015.jpg", "moment": "be-xiu", "caption": "Vành tai bé xíu", "chapter": "chao-doi", "width": 560, "height": 666 },
+    { "file": "thoc-016.jpg", "moment": "be-xiu", "caption": "Môi chúm chím", "chapter": "chao-doi", "width": 560, "height": 550 },
+    { "file": "thoc-017.jpg", "moment": "be-xiu", "chapter": "thang-1", "width": 560, "height": 747 },
+    { "file": "thoc-019.jpg", "moment": "be-xiu", "caption": "Bàn tay nhỏ xíu", "chapter": "chao-doi", "width": 560, "height": 680 },
+    { "file": "thoc-020.jpg", "moment": "be-xiu", "caption": "Mười ngón chân xinh", "chapter": "chao-doi", "width": 560, "height": 761 },
+    { "file": "thoc-021.jpg", "moment": "ban-gau", "chapter": "thang-1", "width": 560, "height": 748 },
+    { "file": "thoc-025.jpg", "moment": "ban-gau", "chapter": "thang-2", "width": 560, "height": 747 },
+    { "file": "thoc-031.jpg", "moment": "ban-gau", "chapter": "thang-3", "width": 560, "height": 420 },
+    { "file": "thoc-039.jpg", "moment": "ban-gau", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-044.jpg", "moment": "ban-gau", "chapter": "thang-5", "width": 560, "height": 747 },
+    { "file": "thoc-052.jpg", "moment": "ban-gau", "chapter": "thang-6", "width": 560, "height": 671 },
+    { "file": "thoc-081.jpg", "moment": "ban-gau", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-092.jpg", "moment": "ban-gau", "chapter": "thang-8", "width": 560, "height": 747 },
+    { "file": "thoc-103.jpg", "moment": "ban-gau", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-113.jpg", "moment": "ban-gau", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-130.jpg", "moment": "ban-gau", "chapter": "thang-11", "width": 560, "height": 747 },
+    { "file": "thoc-068.jpg", "moment": "ban-gau", "caption": "Ôm bạn gấu bự", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-054.jpg", "moment": "mam-mam", "caption": "Há miệng, măm nào", "chapter": "thang-6", "width": 560, "height": 747 },
+    { "file": "thoc-061.jpg", "moment": "mam-mam", "caption": "Món này màu xanh, ăn thử coi sao", "chapter": "thang-6", "width": 560, "height": 747 },
+    { "file": "thoc-062.jpg", "moment": "mam-mam", "chapter": "thang-6", "width": 560, "height": 747 },
+    { "file": "thoc-082.jpg", "moment": "mam-mam", "chapter": "thang-7", "width": 506, "height": 900 },
+    { "file": "thoc-109.jpg", "moment": "mam-mam", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-121.jpg", "moment": "mam-mam", "chapter": "thang-10", "width": 506, "height": 900 },
+    { "file": "thoc-033.jpg", "moment": "ngu-ngoan", "caption": "Ngủ say quá trời", "chapter": "thang-3", "width": 560, "height": 420 },
+    { "file": "thoc-043.jpg", "moment": "ngu-ngoan", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-058.jpg", "moment": "ngu-ngoan", "chapter": "thang-6", "width": 560, "height": 871 },
+    { "file": "thoc-079.jpg", "moment": "ngu-ngoan", "chapter": "thang-7", "width": 560, "height": 420 },
+    { "file": "thoc-098.jpg", "moment": "ngu-ngoan", "caption": "Buồn ngủ quá ba ơi", "chapter": "thang-8", "width": 560, "height": 747 },
+    { "file": "thoc-045.jpg", "moment": "lam-dang", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-046.jpg", "moment": "lam-dang", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-048.jpg", "moment": "lam-dang", "chapter": "thang-4", "width": 560, "height": 747 },
+    { "file": "thoc-053.jpg", "moment": "lam-dang", "chapter": "thang-6", "width": 500, "height": 900 },
+    { "file": "thoc-099.jpg", "moment": "lam-dang", "caption": "Thóc vừa sắm quả tóc mới", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-100.jpg", "moment": "lam-dang", "caption": "Tóc mới có đẹp hông?", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-101.jpg", "moment": "lam-dang", "caption": "Để Thóc chỉnh lại tóc chút", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-117.jpg", "moment": "lam-dang", "caption": "Đi phượt thoy!", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-118.jpg", "moment": "lam-dang", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-125.jpg", "moment": "lam-dang", "caption": "Mũ tai gấu, ấm ghê", "chapter": "thang-10", "width": 506, "height": 900 },
+    { "file": "thoc-126.jpg", "moment": "lam-dang", "chapter": "thang-10", "width": 506, "height": 900 },
+    { "file": "thoc-018.jpg", "moment": "choi-vui", "chapter": "thang-1", "width": 560, "height": 747 },
+    { "file": "thoc-087.jpg", "moment": "choi-vui", "caption": "Nằm võng hóng mát", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-089.jpg", "moment": "choi-vui", "caption": "Sách cũng ngon nhỉ!", "chapter": "thang-8", "width": 506, "height": 900 },
+    { "file": "thoc-090.jpg", "moment": "choi-vui", "caption": "Đọc sách nè, đừng làm phiền", "chapter": "thang-8", "width": 506, "height": 900 },
+    { "file": "thoc-091.jpg", "moment": "choi-vui", "chapter": "thang-8", "width": 506, "height": 900 },
+    { "file": "thoc-093.jpg", "moment": "choi-vui", "caption": "Vua đầu bếp đó nha", "chapter": "thang-8", "width": 560, "height": 747 },
+    { "file": "thoc-094.jpg", "moment": "choi-vui", "chapter": "thang-9", "width": 560, "height": 667 },
+    { "file": "thoc-095.jpg", "moment": "choi-vui", "caption": "Tôi đã có nhà ở 9 tháng tuổi như thế nào?", "chapter": "thang-9", "width": 560, "height": 701 },
+    { "file": "thoc-096.jpg", "moment": "choi-vui", "chapter": "thang-9", "width": 560, "height": 688 },
+    { "file": "thoc-097.jpg", "moment": "choi-vui", "chapter": "thang-9", "width": 560, "height": 674 },
+    { "file": "thoc-104.jpg", "moment": "choi-vui", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-107.jpg", "moment": "choi-vui", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-111.jpg", "moment": "choi-vui", "caption": "Bò nhanh như chớp", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-114.jpg", "moment": "choi-vui", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-115.jpg", "moment": "choi-vui", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-116.jpg", "moment": "choi-vui", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-119.jpg", "moment": "choi-vui", "caption": "Hoàng tử tập cưỡi ngựa", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-124.jpg", "moment": "choi-vui", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-128.jpg", "moment": "choi-vui", "chapter": "thang-10", "width": 560, "height": 747 },
+    { "file": "thoc-129.jpg", "moment": "choi-vui", "chapter": "thang-11", "width": 560, "height": 747 },
+    { "file": "thoc-131.jpg", "moment": "choi-vui", "caption": "Con muỗi đáng ghét, huhu!", "chapter": "thang-11", "width": 560, "height": 747 },
+    { "file": "thoc-056.jpg", "moment": "dao-pho", "chapter": "thang-6", "width": 560, "height": 805 },
+    { "file": "thoc-106.jpg", "moment": "dao-pho", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-110.jpg", "moment": "dao-pho", "caption": "Hổng chịu đâu!", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-112.jpg", "moment": "dao-pho", "chapter": "thang-9", "width": 560, "height": 747 },
+    { "file": "thoc-026.jpg", "moment": "nu-cuoi", "chapter": "thang-2", "width": 560, "height": 747 },
+    { "file": "thoc-027.jpg", "moment": "nu-cuoi", "caption": "Cười một cái cho cô chú xem nè", "chapter": "thang-2", "width": 506, "height": 900 },
+    { "file": "thoc-030.jpg", "moment": "nu-cuoi", "chapter": "thang-3", "width": 560, "height": 747 },
+    { "file": "thoc-084.jpg", "moment": "nu-cuoi", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-086.jpg", "moment": "nu-cuoi", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-088.jpg", "moment": "nu-cuoi", "chapter": "thang-7", "width": 560, "height": 747 },
+    { "file": "thoc-120.jpg", "moment": "nu-cuoi", "chapter": "thang-10", "width": 506, "height": 900 }
   ]
 };
