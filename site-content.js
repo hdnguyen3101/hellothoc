@@ -136,7 +136,7 @@ window.THOC_CONTENT = {
     {
       "key": "hoang-tu",
       "title": "Hoàng tử thôi nôi",
-      "note": "Vương miện, bóng bay và biển xanh trong buổi chụp tròn một tuổi."
+      "note": "Vương miện, bóng bay và biển xanh trong buổi chụp sắp tròn một tuổi."
     },
     {
       "key": "ca-nha",
@@ -146,12 +146,12 @@ window.THOC_CONTENT = {
     {
       "key": "di-bien",
       "title": "Đi biển thoy!",
-      "note": "Cát, sóng, gió và một em bé đội mũ."
+      "note": "Cát, sóng, gió và một em bé đáng yêu."
     },
     {
       "key": "tap-boi",
       "title": "Tập bơi cùng ba mẹ",
-      "note": "Phao vịt, phao xanh và nước mát rượi."
+      "note": "Vịt con, phao xanh và nước mát rượi."
     },
     {
       "key": "be-xiu",
@@ -186,7 +186,7 @@ window.THOC_CONTENT = {
     {
       "key": "dao-pho",
       "title": "Đi dạo phố",
-      "note": "Ngồi xe đẩy, ngắm người qua lại."
+      "note": "Ngồi xe đẩy, mình cùng đi mall."
     },
     {
       "key": "nu-cuoi",
