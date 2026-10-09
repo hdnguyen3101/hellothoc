@@ -113,6 +113,9 @@ h3{font-size:26px;font-weight:700;line-height:1.2}
 .map-pin{position:absolute;top:-58px;right:28px;width:46px;height:100px;transform:rotate(8deg);pointer-events:none}
 .venue-name{margin-top:26px;font-size:clamp(28px,3vw,36px)}
 .venue-address{margin:4px 0 22px;font-size:18px;max-width:28em}
+.early-note{display:flex;align-items:center;gap:12px;max-width:34em;margin-top:18px;padding:12px 18px 10px 12px;border:2.5px solid var(--ink);border-radius:18px;background:#fff3cc;font-size:16px;line-height:1.5;transform:rotate(-1deg)}
+.early-note svg{flex:none;width:30px;height:50px;transform:rotate(-14deg)}
+.early-note strong{font-family:var(--display);font-size:18px;font-weight:800}
 .signature{margin-top:14px;font-family:var(--display);font-size:24px;font-weight:700}
 
 /* Journey */
