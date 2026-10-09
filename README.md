@@ -1,20 +1,34 @@
-# Landing page của Thóc
+# Website Thóc tròn 1 tuổi
 
-## Cấu trúc
+Website HTML, CSS và JavaScript tĩnh cho lời mời thôi nôi, album 18 ảnh và 4 dấu mốc của Thóc. Tiệc diễn ra lúc 18h ngày 24/10/2026 tại Ẩm Thực Nhà Tôi, 62-64 Đường Vành Đai Trong, An Lạc, TP. Hồ Chí Minh.
 
-index.html
-assets/
-  thoc-background.jpg
+## Nội dung và ảnh
 
-## Đưa lên GitHub
+Ảnh gốc đến từ thư mục gia đình đã cung cấp. Bản dùng trên web được chỉnh hướng theo EXIF, nén JPEG và bỏ metadata gốc. Bản gốc không bị thay đổi.
 
-1. Giải nén thoc-github.zip.
-2. Đưa index.html và cả thư mục assets lên cùng một thư mục trong repository. Giữ nguyên tên và cấu trúc file.
-3. Để hiển thị thành website, bật GitHub Pages cho repository và chọn thư mục chứa index.html làm nguồn xuất bản.
-4. Mở địa chỉ website do GitHub Pages cung cấp để kiểm tra.
+- Đổi ảnh mở đầu tại `assets/photos/hero.jpg`. Giữ ảnh thật của Thóc và kiểm tra vùng cắt ảnh trong `styles.css` ở cả máy tính lẫn điện thoại.
+- Chỉnh danh sách `photos` trong `site-content.js` để thay ảnh album và chú thích. Mỗi ảnh có `src`, `thumbnail`, `caption`, `alt`; thêm `position` khi cần điều chỉnh vùng cắt ảnh thu nhỏ.
+- Chỉnh danh sách `milestones` để thay 4 ảnh tạm. Tên dấu mốc do gia đình chọn. Thêm `story` khi ba mẹ cung cấp câu chuyện; không tự gán ngày biết lật, biết ngồi, biết đứng hoặc mọc răng.
+- Nội dung thiệp mời nằm trực tiếp trong `index.html`, gồm ngày giờ, địa chỉ và link Google Maps do gia đình gửi. Khi đổi lịch tiệc, cập nhật cả nội dung và metadata chia sẻ.
+- Ảnh bìa chia sẻ nằm ở `assets/photos/share-cover.jpg`, kích thước 1200 × 630 px. Các thẻ Open Graph và Twitter nằm trong HTML để công cụ chia sẻ đọc được mà không chạy JavaScript.
 
-Nếu dùng tên miền đã mua ở iNET, bạn có thể trỏ tên miền về website GitHub Pages. Việc mua tên miền và việc lưu trữ website là hai phần riêng.
+Ảnh minh họa 3D cũ vẫn nằm trong repository để giữ lại nguồn cũ. Website mới không sử dụng ảnh này.
 
-Nếu dùng hosting của iNET, tải cả index.html và thư mục assets vào cùng thư mục gốc website. Chỉ tải index.html sẽ không có ảnh nền.
+## Xem website
 
-Không cần cài đặt, backend hay công cụ build. Có thể mở index.html trên máy để xem sau khi giải nén. Nội dung và bố cục được giữ nguyên; ảnh được chuyển sang JPEG chất lượng 90 để giảm dung lượng.
+Mở `index.html` hoặc chạy máy chủ HTTP tĩnh tại thư mục gốc. Website không có backend, công cụ build, hệ thống đăng nhập hay biểu mẫu xác nhận tham dự.
+
+- Chạm ảnh album để xem lớn. Dùng nút trước, tiếp theo hoặc phím mũi tên để chuyển ảnh.
+- Vuốt ngang trên ảnh khi dùng điện thoại. Phím Escape hoặc nút đóng đưa con trỏ về ảnh vừa chọn.
+- Kiểm tra nút bản đồ mở đúng địa điểm Ẩm Thực Nhà Tôi từ link `https://maps.app.goo.gl/rwCZzLZ7KrzvmmYR6`.
+- Khi bật chế độ giảm chuyển động, các nội dung vẫn hiển thị và hiệu ứng chuyển động được tắt.
+
+## GitHub Pages
+
+Repository `hdnguyen3101/hellothoc` dùng "Deploy from a branch", nhánh `main`, thư mục `/`. Giữ nguyên `.nojekyll` và `CNAME` khi xuất bản.
+
+Sau khi cập nhật `main`, kiểm tra build Pages hoàn tất rồi mở `https://www.hellothoc.io.vn/`. Xác nhận ảnh, font, album, lịch tiệc và bản đồ hoạt động từ URL thật.
+
+## Font và giấy phép
+
+Fraunces và Be Vietnam Pro nằm trong `assets/fonts/`, kèm giấy phép SIL Open Font License. Khách tải font từ cùng nơi lưu trữ với website.

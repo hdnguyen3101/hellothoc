@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fff2df">
-<meta name="description" content="Ngôi nhà nhỏ của Thóc đang được ba mẹ chuẩn bị thật xinh. Sắp có album ảnh, sinh nhật, góc vui chơi và những kỷ niệm yêu thương!">
-<title>Xin chào! Mình là Thóc 🌾</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ffc464'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%2385532e'%3ET%3C/text%3E%3C/svg%3E">
-<style>
-*{box-sizing:border-box}html{background:#fff1df;color:#563b42}body{margin:0;font-family:"Comic Sans MS","Chalkboard SE","Trebuchet MS",Arial,sans-serif}main{width:100%;max-width:1920px;margin:auto}.landing{position:relative;isolation:isolate;container-type:inline-size;min-height:66.6667vw;max-width:1920px}.art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.content{position:relative;width:39%;margin-left:40.5%;padding-top:9.2%;text-align:center;padding-bottom:0}h1{font-family:"Arial Rounded MT Bold","Comic Sans MS","Trebuchet MS",sans-serif;font-weight:900;font-size:clamp(3rem,4.6cqw,5.5rem);line-height:1.19;letter-spacing:-.04em;margin:0 0 1.15cqw;text-shadow:0 3px 0 #fff5e7;transform:rotate(-2deg)}h1 .first{display:block}h1 .second{display:block;white-space:nowrap}h1 em{font-style:normal;color:#ffbd4f;text-shadow:0 3px 0 #e69c34,1px 5px 0 #dc8a24,-1px -2px 0 #fff2b3;letter-spacing:-.04em}h1 .sun{font-family:Arial,sans-serif;display:inline-block;font-size:.58em;vertical-align:middle;color:#ffc363;text-shadow:0 2px #fff0c6;transform:rotate(12deg);margin-left:.06em}.intro{font-size:clamp(1rem,1.08cqw,1.3rem);line-height:1.65;margin:0 auto;color:#79595b;width:96%}.intro .heart{color:#f19059}.build{margin-top:1.55cqw}.meter-row{display:flex;align-items:center;gap:1cqw;margin:0 0 .6cqw 0}.track{position:relative;flex:1;height:3.2cqw;min-height:35px;padding:.43cqw;background:#fffdf7;border-radius:999px;box-shadow:0 .5cqw .5cqw #b299b52b,inset 0 1px 2px #fff}.channel{height:100%;border-radius:999px;background:#e2dbe0;box-shadow:inset 0 3px 6px #b0a4b429}.fill{position:relative;width:60%;height:100%;border-radius:999px;background:repeating-linear-gradient(135deg,#ffffff00 0 1.7cqw,#ffffff33 1.7cqw 3.3cqw),linear-gradient(#85d9ff,#4caff5);box-shadow:inset 0 3px 2px #ceeeff99}.bear{position:absolute;right:0;top:50%;transform:translate(50%,-50%);display:grid;place-items:center;width:3.35cqw;height:3.35cqw;min-height:38px;min-width:38px;background:#fffcf5;border-radius:40%;font-family:Arial,sans-serif;font-size:2.2cqw;box-shadow:0 3px 4px #74554425;line-height:1}.percent{font-size:clamp(1rem,1.25cqw,1.5rem);white-space:nowrap}.build-note{font-size:clamp(.9rem,1.06cqw,1.25rem);margin:.8cqw 0 1.6cqw;color:#61444a}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7cqw}.card{border:2px solid #fffef4;border-radius:2cqw;background:linear-gradient(145deg,#fffdf5e8,#fff7eecc);box-shadow:0 .5cqw 1.2cqw #ce9c6920;padding:1.05cqw .35cqw .8cqw;min-height:8.2cqw;display:flex;flex-direction:column;justify-content:center;align-items:center}.icon{font-family:"Segoe UI Emoji","Apple Color Emoji",sans-serif;font-size:3cqw;line-height:1.2;filter:drop-shadow(0 3px 2px #a7785933);margin-bottom:.55cqw}.card h2{font-size:clamp(.875rem,1.03cqw,1.25rem);font-weight:400;line-height:1.45;margin:0}.mobile-status{display:none}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}footer{text-align:center;font-size:.8rem;line-height:1.6;background:#fff2df;padding:12px 20px;color:#866349}footer span{color:#cf794f}
-@media(min-width:1920px){.landing{min-height:1280px}}
-@media(max-width:1100px){.landing{min-height:0;container-type:normal;background:#fff3e4}.art{position:relative;display:block;height:650px;object-fit:cover;object-position:left center;z-index:-1}.content{width:auto;max-width:720px;margin:-130px auto 0;padding:80px 35px 40px;background:linear-gradient(180deg,#fff3e400,#fff3e4 75px);text-align:center}h1{font-size:clamp(2.7rem,7vw,4.5rem);margin:0 0 22px;line-height:1.17}.intro{font-size:1.05rem;line-height:1.8;width:auto;max-width:560px}.build{margin-top:26px}.meter-row{gap:16px}.track{height:40px;padding:6px}.fill{background:repeating-linear-gradient(135deg,#ffffff00 0 19px,#ffffff33 19px 38px),linear-gradient(#85d9ff,#4caff5)}.bear{font-size:28px;width:42px;height:42px}.percent{font-size:1.15rem}.build-note{font-size:.95rem;margin:17px 0 27px}.cards{gap:12px}.card{border-radius:24px;padding:20px 8px;min-height:132px;background:linear-gradient(135deg,#fffdf7,#ffeedd);box-shadow:0 6px 15px #cf9e6420}.icon{font-size:42px;margin-bottom:13px}.card h2{font-size:1rem}.mobile-status{display:inline-block;margin:26px 0 0;border:2px solid #d1a16a;border-radius:9px;background:linear-gradient(#eec793,#dbae74);padding:8px 18px;color:#734b30;font-weight:800;letter-spacing:1px;box-shadow:0 4px 0 #b78d5f;transform:rotate(-3deg)}footer{background:#fff3e4}}
-@media(min-width:701px) and (max-width:1100px){.art{height:720px;object-position:left bottom}.content{max-width:none;margin-top:-180px;padding-left:max(35px,12%);padding-right:max(35px,12%);padding-top:110px}}
-@media(max-width:700px){.art{height:570px;object-position:left center}.content{margin-top:-95px;padding:72px 23px 30px}.intro{font-size:1rem}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{min-height:136px}.card h2 br{display:none}h1{font-size:clamp(2.5rem,8vw,3.4rem)}}
-@media(max-width:400px){.art{height:490px}.content{padding-left:18px;padding-right:18px}h1{font-size:2.4rem}.intro{font-size:.95rem}.build-note{font-size:.85rem}.card h2{font-size:.94rem}}
-@media(prefers-reduced-motion:no-preference){.content{animation:appear .6s ease-out}@keyframes appear{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}}
-@media print{.landing{min-height:0}.art{position:relative;height:auto}.content{margin:0 auto;padding:25px;width:100%;max-width:650px}h1{font-size:36px}.cards{gap:12px}.icon{font-size:30px}.card h2{font-size:14px}.track{height:30px}.bear{font-size:25px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f3e8">
+  <meta name="description" content="Thóc tròn 1 tuổi. Mời cô chú đến chung vui lúc 18h ngày 24/10/2026 tại Ẩm Thực Nhà Tôi.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Thóc tròn 1 tuổi">
+  <meta property="og:description" content="Tiệc thôi nôi của Thóc, 18h ngày 24/10/2026 tại Ẩm Thực Nhà Tôi.">
+  <meta property="og:url" content="https://www.hellothoc.io.vn/">
+  <meta property="og:image" content="https://www.hellothoc.io.vn/assets/photos/share-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.hellothoc.io.vn/assets/photos/share-cover.jpg">
+  <title>Thóc tròn 1 tuổi</title>
+  <link rel="canonical" href="https://www.hellothoc.io.vn/">
+  <link rel="icon" type="image/svg+xml" href="assets/thoc-mark.svg">
+  <link rel="preload" href="assets/fonts/fraunces-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/be-vietnam-pro-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-content.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-<!-- Static website: keep index.html and assets/ together. No backend or JavaScript required.
-     Background edited with the built-in ImageGen tool from the user's reference.
-     Art prompt: Preserve the reference composition, baby, warm 3D room, wooden Thoc logo, airplane, speech bubbles and IN PROGRESS crane sign. Remove only the central headline, paragraph, progress bar and four cards; reconstruct their area as a clean cream cloud for live HTML content.
-     Progress: change aria-valuenow, the visible percentage and .fill width together. -->
-<main>
- <section class="landing" aria-labelledby="hello">
-  <img class="art" src="assets/thoc-background.jpg" width="1536" height="1024" alt="Phòng chơi 3D ấm áp bên cửa sổ bầu trời. Bé Thóc đội mũ vàng, mặc yếm xanh, cầm tay game giữa các bạn thú bông. Bảng gỗ Thóc treo bên trái; cần cẩu đồ chơi treo bảng IN PROGRESS bên phải.">
-  <div class="content">
-   <h1 id="hello"><span class="first">Xin chào! <span class="sun" aria-hidden="true">☀</span></span><span class="second">Mình là <em>Thóc</em></span></h1>
-   <p class="intro">Ngôi nhà nhỏ trên internet của mình đang được ba mẹ chuẩn bị thật xinh. Sắp tới sẽ có rất nhiều điều dễ thương như ảnh kỷ niệm, hành trình lớn lên, những khoảnh khắc đáng yêu và thật nhiều bất ngờ dành cho Thóc! <span class="heart" aria-hidden="true">♥</span></p>
-   <div class="build">
-    <div class="meter-row"><div class="track" role="progressbar" aria-label="Tiến độ xây dựng website của Thóc" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><div class="channel"><div class="fill"><span class="bear" aria-hidden="true">🐻</span></div></div></div><span class="percent" aria-hidden="true">60%</span></div>
-    <p class="build-note">Đang xây dựng... Vui lòng quay lại sau nhé! <span aria-hidden="true">💛</span></p>
-   </div>
-   <section class="cards" aria-label="Những mục sắp ra mắt">
-    <article class="card"><span class="icon" aria-hidden="true">📸</span><h2>Album ảnh</h2><span class="sr-only"> — Sắp ra mắt</span></article>
-    <article class="card"><span class="icon" aria-hidden="true">🎂</span><h2>Sinh nhật</h2><span class="sr-only"> — Sắp ra mắt</span></article>
-    <article class="card"><span class="icon" aria-hidden="true">🎮</span><h2>Góc vui chơi</h2><span class="sr-only"> — Sắp ra mắt</span></article>
-    <article class="card"><span class="icon" aria-hidden="true">❤️</span><h2>Kỷ niệm<br> yêu thương</h2><span class="sr-only"> — Sắp ra mắt</span></article>
-   </section>
-   <p class="mobile-status"><span aria-hidden="true">🚧</span> IN PROGRESS</p>
-  </div>
- </section>
-</main>
-<footer>Một ngôi nhà nhỏ, thật nhiều yêu thương. <span aria-hidden="true">♥</span> Ba &amp; Mẹ dành cho Thóc.</footer>
+  <a class="skip-link" href="#loi-moi">Đến lời mời</a>
+  <header class="site-header">
+    <a class="wordmark" href="#dau-trang" aria-label="Thóc, về đầu trang">thóc<span aria-hidden="true">.</span></a>
+    <nav aria-label="Nội dung website"><a href="#loi-moi">Lời mời</a><a href="#album">Album</a><a href="#dau-moc">Dấu mốc</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="dau-trang" aria-labelledby="hero-title">
+      <img class="hero-image" id="hero-image" src="assets/photos/hero.jpg" alt="Thóc cười, mặc áo họa tiết xe và đeo đai màu vàng" fetchpriority="high" decoding="async" width="1536" height="2048">
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 id="hero-title"><span class="hero-name">Thóc</span><span class="hero-age">tròn <span class="birthday-number">1</span> tuổi</span></h1>
+        <p class="hero-intro">Mời cô chú cùng mừng sinh nhật đầu tiên của Thóc.</p>
+        <a class="button button-primary" href="#loi-moi">Xem lời mời <span aria-hidden="true">↗</span></a>
+      </div>
+      <svg class="hero-edge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 39C181 5 304 67 498 42C721 12 883 28 1033 45C1195 65 1321 0 1440 23V70H0Z"/></svg>
+    </section>
+    <section class="invitation section" id="loi-moi" aria-labelledby="invitation-title">
+      <div class="section-heading reveal"><span class="section-number" aria-hidden="true">01 / Lời mời</span><h2 id="invitation-title">Mừng Thóc<br><em>tròn một tuổi.</em></h2></div>
+      <div class="invitation-content reveal">
+        <p class="invitation-message">Ba mẹ mời cô chú, anh chị và các bạn nhỏ đến chung vui trong tiệc thôi nôi của Thóc.</p>
+        <dl class="event-information">
+          <div class="event-row"><dt>Thời gian</dt><dd><time datetime="2026-10-24T18:00:00+07:00">Thứ Bảy, ngày 24.10.2026</time><span class="event-time">Lúc 18 giờ</span></dd></div>
+          <div class="event-row"><dt>Địa điểm</dt><dd><strong>Ẩm Thực Nhà Tôi</strong><span>62-64 Đường Vành Đai Trong,<br>An Lạc, TP. Hồ Chí Minh</span></dd></div>
+        </dl>
+        <a class="button button-outline" href="https://maps.app.goo.gl/rwCZzLZ7KrzvmmYR6" target="_blank" rel="noopener noreferrer">Mở bản đồ <span aria-hidden="true">↗</span></a>
+        <p class="signature">Ba &amp; Mẹ của Thóc</p>
+      </div>
+    </section>
+    <section class="album section" id="album" aria-labelledby="album-title">
+      <div class="album-heading reveal">
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02 / Album của Thóc</span><h2 id="album-title">Một tuổi nhỏ.<br><em>Thật nhiều thương.</em></h2></div>
+        <p class="section-intro">Từ những ngày bé xíu đến lúc ngồi chơi và đi biển cùng cả nhà.</p>
+      </div>
+      <div class="photo-grid" id="photo-grid"></div>
+      <p class="gallery-hint">Chạm vào ảnh để xem lớn.</p>
+    </section>
+    <section class="milestones section" id="dau-moc" aria-labelledby="milestones-title">
+      <div class="section-heading reveal"><span class="section-number" aria-hidden="true">03 / Dấu mốc đầu đời</span><h2 id="milestones-title">Từng chút một,<br><em>Thóc lớn lên.</em></h2><p class="section-intro" id="milestones-intro">Ảnh tạm cho bốn dấu mốc. Ba mẹ sẽ chọn lại ảnh sau.</p></div>
+      <div class="milestone-list" id="milestone-list"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-wordmark" href="#dau-trang" aria-label="Thóc, về đầu trang">thóc<span aria-hidden="true">.</span></a>
+    <p>Ba &amp; Mẹ dành cho Thóc.</p>
+    <a href="#dau-trang" class="back-to-top">Về đầu trang <span aria-hidden="true">↑</span></a>
+  </footer>
+  <dialog class="lightbox" id="lightbox" aria-label="Xem ảnh của Thóc">
+    <div class="lightbox-toolbar"><span id="lightbox-count" aria-live="polite"></span><button type="button" class="lightbox-close" id="lightbox-close" aria-label="Đóng ảnh">Đóng <span aria-hidden="true">×</span></button></div>
+    <div class="lightbox-stage">
+      <button type="button" class="lightbox-arrow lightbox-previous" id="lightbox-previous" aria-label="Ảnh trước"><span aria-hidden="true">←</span></button>
+      <figure class="lightbox-figure"><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+      <button type="button" class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Ảnh tiếp theo"><span aria-hidden="true">→</span></button>
+    </div>
+  </dialog>
+  <noscript><p class="noscript-note">Hãy bật JavaScript để xem album ảnh.</p></noscript>
 </body>
 </html>
